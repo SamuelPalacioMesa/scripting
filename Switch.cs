@@ -65,7 +65,7 @@ namespace DesafioBase
             salarioreal = (salario - eps - pension - arl);
             salarioanual = (salarioreal * 12) + prima;
             Console.WriteLine("Su salario real es : " + salarioreal);
-            Console.WriteLine("Su salario real es : " + salarioanual);
+            Console.WriteLine("Su salario real anual es : " + salarioanual);
         
         }
     }
