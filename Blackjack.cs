@@ -19,7 +19,7 @@ namespace Blackjack
             
             carta1 = aleatorio.Next(1, 11);
             carta2 = aleatorio.Next(1, 11);
-            suma = suma + carta1 +carta2;
+            suma = carta1 +carta2;
 
             Console.WriteLine("Su carta 1 es : " + carta1);
             Console.WriteLine("Su carta 2 es : " + carta2);
@@ -31,7 +31,7 @@ namespace Blackjack
             while (continuar == "s" && suma < 21)
             {
                 carta3 = aleatorio.Next(1, 11);
-                suma = suma + carta3;
+                suma += carta3;
 
                 
                 if (suma > 21)
