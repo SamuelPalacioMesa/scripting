@@ -22,6 +22,7 @@ namespace ArreglosdeDatos
             double M05 = (Cy[3] - Cy[1]) / (Cx[3] - Cx[1]);
             double M06 = (Cy[3] - Cy[2]) / (Cx[3] - Cx[2]);
 
+            
             double D01 = Math.Sqrt(Math.Pow((Cy[1] - Cy[0]), 2) + Math.Pow((Cx[1] - Cx[0]), 2));
             double D02 = Math.Sqrt(Math.Pow((Cy[2] - Cy[0]), 2) + Math.Pow((Cx[2] - Cx[0]), 2));
             double D03 = Math.Sqrt(Math.Pow((Cy[3] - Cy[0]), 2) + Math.Pow((Cx[3] - Cx[0]), 2));
