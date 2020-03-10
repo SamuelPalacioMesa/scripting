@@ -1,0 +1,56 @@
+
+double promedio = 0, sumas = 0;
+int contador = 0; 
+        for (int i = 0; i<notas.Length; i++)
+        {
+            promedio += notas[i]/ nombres.Length;
+        }
+        for (int i = 0; i<notas.Length; i++)          // para determinar si esta cerca o q
+        {
+            sumas = (notas[i]-promedio);
+            if (sumas > 0.5)
+            {
+                contador++;
+            }
+        }
+       
+        salida = contador;
+
+
+
+    
+        double promedio = 0;
+  
+       for (int i = 0; i<notas.Length; i++)
+        {
+            promedio += notas[i] / nombres.Length;
+        }
+
+        Console.Write(promedio);
+    
+        for (int i = 0; i<nombres.Length; i++)
+         {
+         for (int k = 0; k<nombres[i].Length; k++)
+         {
+          if ((nombres[i])[k] == 'A' && (notas[i] >= promedio))
+             {
+                salida.Add(nombres[i]);
+             }
+          }
+
+        }
+
+
+
+        for (int i = 0; i<salida.Count-1; i++)
+        {
+            for (int j = 0; j<salida.Count-1; j++)
+            {
+                if (salida[i] == salida[i + 1])
+                {
+                    salida.RemoveAt(i);
+                    i = 0;
+                }
+            }
+
+        }
